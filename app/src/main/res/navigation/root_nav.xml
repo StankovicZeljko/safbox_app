@@ -7,17 +7,26 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.zeljkostankovic.safbox_app.HomeFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/deviceFragment"
-        android:name="com.zeljkostankovic.safbox_app.DeviceFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.DeviceFragment"
         android:label="fragment_device"
         tools:layout="@layout/fragment_device" />
     <fragment
         android:id="@+id/challengeFragment"
-        android:name="com.zeljkostankovic.safbox_app.ChallengeFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.ChallengeFragment"
         android:label="fragment_challenge"
-        tools:layout="@layout/fragment_challenge" />
+        tools:layout="@layout/fragment_challenge" >
+        <action
+            android:id="@+id/action_challengeFragment_to_chooseChallengeTypFragment"
+            app:destination="@id/chooseChallengeTypFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseChallengeTypFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.ChooseChallengeTypFragment"
+        android:label="fragment_choose_challenge_typ"
+        tools:layout="@layout/fragment_choose_challenge_typ" />
 </navigation>
