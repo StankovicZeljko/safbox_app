@@ -28,5 +28,39 @@
         android:id="@+id/chooseChallengeTypFragment"
         android:name="com.zeljkostankovic.safbox_app.fragments.ChooseChallengeTypFragment"
         android:label="fragment_choose_challenge_typ"
-        tools:layout="@layout/fragment_choose_challenge_typ" />
+        tools:layout="@layout/fragment_choose_challenge_typ" >
+        <action
+            android:id="@+id/action_chooseChallengeTypFragment_to_challengeFragment"
+            app:destination="@id/challengeFragment" />
+        <action
+            android:id="@+id/action_chooseChallengeTypFragment_to_newTimeChallengeFragment"
+            app:destination="@id/newTimeChallengeFragment" />
+        <action
+            android:id="@+id/action_chooseChallengeTypFragment_to_newCodeChallengeFragment"
+            app:destination="@id/newCodeChallengeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newTimeChallengeFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.NewTimeChallengeFragment"
+        android:label="fragment_new_time_challenge"
+        tools:layout="@layout/fragment_new_time_challenge" >
+        <action
+            android:id="@+id/action_newTimeChallengeFragment_to_chooseChallengeTypFragment"
+            app:destination="@id/chooseChallengeTypFragment" />
+        <action
+            android:id="@+id/action_newTimeChallengeFragment_to_challengeFragment"
+            app:destination="@id/challengeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newCodeChallengeFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.NewCodeChallengeFragment"
+        android:label="fragment_new_code_challenge"
+        tools:layout="@layout/fragment_new_code_challenge" >
+        <action
+            android:id="@+id/action_newCodeChallengeFragment_to_chooseChallengeTypFragment"
+            app:destination="@id/chooseChallengeTypFragment" />
+        <action
+            android:id="@+id/action_newCodeChallengeFragment_to_challengeFragment"
+            app:destination="@id/challengeFragment" />
+    </fragment>
 </navigation>
