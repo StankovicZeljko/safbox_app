@@ -58,7 +58,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/btnSpeichernNewCode"
+        android:id="@+id/btnSpeichernNewTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="67dp"
@@ -70,15 +70,17 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/btnAbbrechenNewCode"
+        android:id="@+id/btnAbbrechenNewTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="48dp"
         android:backgroundTint="@color/white"
         android:text="Abbrechen"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSpeichernNewTime"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
