@@ -69,7 +69,7 @@
     </fragment>
     <fragment
         android:id="@+id/createNewClosureFragment"
-        android:name="com.zeljkostankovic.safbox_app.CreateNewClosureFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.CreateNewClosureFragment"
         android:label="fragment_create_new_closure"
         tools:layout="@layout/fragment_create_new_closure" >
         <action
