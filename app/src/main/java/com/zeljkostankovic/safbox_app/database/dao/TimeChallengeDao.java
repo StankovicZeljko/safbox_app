@@ -12,7 +12,7 @@ import com.zeljkostankovic.safbox_app.database.modules.TimeChallenge;
 import java.util.List;
 
 @Dao
-public interface TimeChallangeDao {
+public interface TimeChallengeDao {
 
     String table = "time_challenge_table";
 
