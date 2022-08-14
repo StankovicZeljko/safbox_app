@@ -15,7 +15,7 @@ public class TimeChallengeRepository {
     private TimeChallengeDao mTimeChallengeDao;
     private LiveData<List<TimeChallenge>> mAllTimeChallenge;
 
-    TimeChallengeRepository(Application application) {
+    public TimeChallengeRepository(Application application) {
 
         SafeBoxDatabase db = SafeBoxDatabase.getDatabase(application);
         mTimeChallengeDao = db.timeChallangeDao();
@@ -23,12 +23,12 @@ public class TimeChallengeRepository {
 
     }
 
-    LiveData<List<TimeChallenge>> getmAllTimeChallenge() {
+    public LiveData<List<TimeChallenge>> getmAllTimeChallenge() {
         return mAllTimeChallenge;
     }
 
 
-    void insert(TimeChallenge timeChallenge) {
+    public void insert(TimeChallenge timeChallenge) {
         SafeBoxDatabase.databaseWriteExecutor.execute( () -> {
             mTimeChallengeDao.insert(timeChallenge);
         });
