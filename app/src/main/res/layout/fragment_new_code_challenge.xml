@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/bezeichnerNewCode"
+        android:id="@+id/bezeichnerNewTime"
         android:layout_width="278dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -54,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bezeichnerNewCode"
+        app:layout_constraintTop_toBottomOf="@+id/bezeichnerNewTime"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
