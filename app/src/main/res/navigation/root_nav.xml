@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.zeljkostankovic.safbox_app.fragments.HomeFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.closure.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,12 +16,12 @@
     </fragment>
     <fragment
         android:id="@+id/deviceFragment"
-        android:name="com.zeljkostankovic.safbox_app.fragments.DeviceFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.device.DeviceFragment"
         android:label="fragment_device"
         tools:layout="@layout/fragment_device" />
     <fragment
         android:id="@+id/challengeFragment"
-        android:name="com.zeljkostankovic.safbox_app.fragments.ChallengeFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.challenge.ChallengeFragment"
         android:label="fragment_challenge"
         tools:layout="@layout/fragment_challenge" >
         <action
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/chooseChallengeTypFragment"
-        android:name="com.zeljkostankovic.safbox_app.fragments.ChooseChallengeTypFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.challenge.ChooseChallengeTypFragment"
         android:label="fragment_choose_challenge_typ"
         tools:layout="@layout/fragment_choose_challenge_typ" >
         <action
@@ -45,7 +45,7 @@
     </fragment>
     <fragment
         android:id="@+id/newTimeChallengeFragment"
-        android:name="com.zeljkostankovic.safbox_app.fragments.NewTimeChallengeFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.challenge.NewTimeChallengeFragment"
         android:label="fragment_new_time_challenge"
         tools:layout="@layout/fragment_new_time_challenge" >
         <action
@@ -57,7 +57,7 @@
     </fragment>
     <fragment
         android:id="@+id/newCodeChallengeFragment"
-        android:name="com.zeljkostankovic.safbox_app.fragments.NewCodeChallengeFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.challenge.NewCodeChallengeFragment"
         android:label="fragment_new_code_challenge"
         tools:layout="@layout/fragment_new_code_challenge" >
         <action
@@ -69,7 +69,7 @@
     </fragment>
     <fragment
         android:id="@+id/createNewClosureFragment"
-        android:name="com.zeljkostankovic.safbox_app.fragments.CreateNewClosureFragment"
+        android:name="com.zeljkostankovic.safbox_app.fragments.closure.CreateNewClosureFragment"
         android:label="fragment_create_new_closure"
         tools:layout="@layout/fragment_create_new_closure" >
         <action

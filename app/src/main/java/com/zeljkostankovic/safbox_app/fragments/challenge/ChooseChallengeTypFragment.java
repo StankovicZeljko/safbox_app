@@ -1,4 +1,4 @@
-package com.zeljkostankovic.safbox_app.fragments;
+package com.zeljkostankovic.safbox_app.fragments.challenge;
 
 import android.os.Bundle;
 

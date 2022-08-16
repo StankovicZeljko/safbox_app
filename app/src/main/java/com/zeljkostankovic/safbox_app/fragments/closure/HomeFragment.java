@@ -1,4 +1,4 @@
-package com.zeljkostankovic.safbox_app.fragments;
+package com.zeljkostankovic.safbox_app.fragments.closure;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.zeljkostankovic.safbox_app.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CreateNewClosureFragment#newInstance} factory method to
+ * Use the {@link HomeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CreateNewClosureFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class CreateNewClosureFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public CreateNewClosureFragment() {
+    public HomeFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class CreateNewClosureFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment CreateNewClosureFragment.
+     * @return A new instance of fragment HomeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static CreateNewClosureFragment newInstance(String param1, String param2) {
-        CreateNewClosureFragment fragment = new CreateNewClosureFragment();
+    public static HomeFragment newInstance(String param1, String param2) {
+        HomeFragment fragment = new HomeFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class CreateNewClosureFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_create_new_closure, container, false);
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 }
