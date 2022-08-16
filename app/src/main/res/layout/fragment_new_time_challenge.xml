@@ -33,13 +33,13 @@
         android:layout_width="309dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="136dp"
         android:layout_marginEnd="100dp"
+        android:background="@android:color/transparent"
+        app:boxBackgroundColor="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:boxBackgroundColor="@android:color/transparent"
-        android:background="@android:color/transparent">>
+        app:layout_constraintTop_toBottomOf="@+id/view2">>
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/bezeichnungNewTime"
@@ -49,66 +49,24 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayoutTage"
-        android:layout_width="309dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBezeichnungNewTime"
-        app:boxBackgroundColor="@android:color/transparent"
-        android:background="@android:color/transparent">>
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Tage"
-            android:inputType="number"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayoutStunden"
-        android:layout_width="309dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutTage"
-        app:boxBackgroundColor="@android:color/transparent"
-        android:background="@android:color/transparent">>
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/stunden"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Stunden"
-            android:inputType="number"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutMinuten"
         android:layout_width="309dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="100dp"
+        android:background="@android:color/transparent"
+        app:boxBackgroundColor="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutStunden"
-        app:boxBackgroundColor="@android:color/transparent"
-        android:background="@android:color/transparent">>
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBezeichnungNewTime">>
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/minuten"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Minuten"
-            android:inputType="number"/>
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

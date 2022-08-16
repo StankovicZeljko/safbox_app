@@ -11,27 +11,19 @@ public class TimeChallenge {
 
     public String description;
 
-    public int days;
-
-    public int hours;
-
     public int minutes;
 
     public TimeChallenge() {
     }
 
-    public TimeChallenge(String description, int days, int hours, int minutes) {
+    public TimeChallenge(String description, int minutes) {
         this.description = description;
-        this.days = days;
-        this.hours = hours;
         this.minutes = minutes;
     }
 
 
-    public TimeChallenge(String description, String days, String hours, String minutes) {
+    public TimeChallenge(String description, String minutes) {
         this.description = description;
-        this.days = Integer.parseInt(days);
-        this.hours = Integer.parseInt(hours);
         this.minutes = Integer.parseInt(minutes);
     }
 }
